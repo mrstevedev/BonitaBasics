@@ -1,0 +1,80 @@
+//404
+.message-container{
+	height:600px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.message-container p{
+	text-transform: uppercase;
+    font-weight: bold;
+    font-family: anton;
+    font-size: 40px;
+    text-align: center;
+    line-height: 34px;
+}
+
+.message-container span{
+	font-size:28px;
+	color:#a9a9a9;
+	font-weight: 100;
+}
+
+@media(max-width: 480px){
+
+	.message-container p{
+    	line-height: initial;
+	}
+}
+
+//** WooCommerce Styles **//
+
+// Global
+.woocommerce-MyAccount-navigation ul li{
+	list-style:none;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+// Shop
+
+// Checkout
+
+// Cart
+
+// Dashboard
+
+// Orders
+
+// Downloads
+
+// Addresses
+
+.col-1, .col-2 {
+    max-width: 100%;
+}
+// Account Details
+
+//Edit Account Form
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+	height: 23px;
+    text-indent: 5px;
+    border: none;
+    border-bottom: solid 1px #eaeaea;
+    transition: .2s ease-in-out;
+}
+
+input[type="text"]:hover,
+input[type="email"]:hover,
+input[type="password"]:hover{  
+    border-bottom: solid 1px #CCC;
+}
+
+// Log out
+
+
+//** End WooCommerce Styles **//

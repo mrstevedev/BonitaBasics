@@ -1,0 +1,39 @@
+html{
+	border-top: solid 1px #000;
+}
+
+a{
+	transition: .6s ease-in-out;
+}
+
+body{
+	font-family: 'Open Sans';
+	font-size:14px;
+	font-weight: 100;
+	background: url('');
+	background-size: cover
+}
+
+h1{
+	font-family: $Anton;
+	font-size:24px;
+}
+
+h2{
+	font-family: $Anton;
+	font-size:20px;
+}
+
+h3{
+	font-family: $Anton;
+	font-size:16px;
+}
+
+.sidebar-primary .sidebar, .woocommerce #sidebar {
+	display: none;
+}
+
+::selection {
+    background: #254a60;
+    color: #fff;
+}

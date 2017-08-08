@@ -37,11 +37,36 @@ add_filter('upload_mimes', 'cc_mime_types', 1, 1);
 
 // Customize wp-login
 
-function my_custom_login() {
-echo '<link rel="stylesheet" type="text/css" href="' . get_bloginfo('stylesheet_directory') . '/dist/styles/main.css" />';
-}
-add_action('login_head', 'my_custom_login');
+function my_login_logo() { ?>
+    <style type="text/css">
+        body{
+          background: #FFF!important;
+        }
+        
+        #login h1 a, .login h1 a {
+            background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/bonitabasics-green.svg);
+            height:65px;
+            width:320px;
+            background-size: 215px 165px;
+            background-repeat: no-repeat;
+            padding-bottom: 30px;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
+// Removes the add to cart button on shop page
+add_action( 'woocommerce_after_shop_loop_item', 'remove_add_to_cart_buttons', 1 );
+
+    function remove_add_to_cart_buttons() {
+      if( is_product_category() || is_shop()) { 
+        remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
+      }
+    }
+
+add_theme_support( 'wc-product-gallery-zoom' );
+add_theme_support( 'wc-product-gallery-lightbox' );
+add_theme_support( 'wc-product-gallery-slider' );
 
 
 

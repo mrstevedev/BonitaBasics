@@ -19,12 +19,13 @@ var runSequence  = require('run-sequence');
 var sass         = require('gulp-sass');
 var sourcemaps   = require('gulp-sourcemaps');
 var uglify       = require('gulp-uglify');
+// var smoothscroll = require('smoothscroll');
 
 // See https://github.com/austinpray/asset-builder
 var manifest = require('asset-builder')('./assets/manifest.json');
 
 // `path` - Paths to base asset directories. With trailing slashes.
-// - `path.source` - Path to the source files. Default: `assets/`
+// - `path.source` - Path to the source     files. Default: `assets/`
 // - `path.dist` - Path to the build directory. Default: `dist/`
 var path = manifest.paths;
 

@@ -43,3 +43,25 @@
 .navbar-toggle.collapsed span:nth-child(3) {
     opacity: 1;
 }
+
+.btn{
+    border-radius: 0;
+    
+}
+
+.btn-primary, .btn-primary:hover {
+    font-size: 24px;
+    font-family: 'helveticaneuecondensedblack';
+    color: #000;
+    background-color: transparent;
+    border-color: none;
+    -webkit-transition: color 350ms,background-color 350ms,border-color 350ms;
+    transition: color 350ms,background-color 350ms,border-color 350ms;
+}
+ .btn-primary:focus {
+    box-shadow:none;
+}
+
+.hvr-sweep-to-right:before{
+    background: #485c5b!important;
+}

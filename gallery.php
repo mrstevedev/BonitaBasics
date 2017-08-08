@@ -5,23 +5,31 @@
   <?php get_template_part('templates/content', 'page'); ?>
 <?php endwhile; ?>
 
-<style>
+<header>
+	<h2>Gallery</h2>
+</header>
 
-#imagelightbox
-{
-    position: fixed;
-    z-index: 9999;
- 
-    -ms-touch-action: none;
-    touch-action: none;
-}
-</style>
-
-<div class="col-sm-12">
-	<div class="container">
-		<h2>gallery</h2>
-		<a href="#" data-imagelightbox="c">			
-			<img src="https://unsplash.it/500/500" id="imagelightbox" />
-		</a>
+	<div class="gallery">
+		<div class="container-fluid">
+			<div class="row no-gutters image-gallery">
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<img src="https://unsplash.it/400/500" alt="">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<img src="https://unsplash.it/400/500" alt="">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<img src="https://unsplash.it/400/500" alt="">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<img src="https://unsplash.it/400/500" alt="">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<img src="https://unsplash.it/400/500" alt="">
+				</div>
+				<div class="col-sm-12 col-md-12 col-lg-4">
+					<img src="https://unsplash.it/400/500" alt="">
+				</div>
+			</div>
+		</div>
 	</div>
-</div>

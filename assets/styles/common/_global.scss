@@ -14,9 +14,12 @@ html{
 }
 
 a{
-	transition: .2s ease-in-out;
+    transition: .2s ease-in-out;
 }
 
+a:hover{
+        color: #bcc8c5;
+}
 body{
 	font-family: 'Open Sans';
     font-size: 14px;

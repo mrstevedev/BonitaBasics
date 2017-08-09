@@ -22,12 +22,19 @@
 
 .section-2{
     height: 100vh;
-    background: url(/wp-content/uploads/2017/08/20706015_10155463306254564_540361300_o.jpg);
+    background: url(/wp-content/uploads/2017/08/bonitabasics.jpg);
     background-size: 1073px;
+    display: flex;
+    align-items: center;
+    
 }
 
 .section-2 p{
-    color:#FFF!important;
+    color: #bcc8c5;;
+}
+
+.section-2 .svg-arrows{
+    top: 60px;
 }
 
 .section-3, .section-4{
@@ -37,7 +44,7 @@
 	align-items: center;
  	margin: 0 auto;
     text-align: center;
-    background: #FFF;
+    background: #000;
     background-size: cover;
 }
 
@@ -50,6 +57,24 @@
     font-size:86px;
     text-transform: uppercase;
     text-shadow: 0 1px 1px #000;
+    width: 32.4%;
+}
+
+.section-3 h1, .section-4 h1{
+    font-size: 55px;
+    color:#bcc8c5; 
+    text-transform: uppercase
+}
+
+.section-3 p{
+    width: 62%;
+}
+.section-3 img {
+    position: absolute;
+    right: 0;
+    top: -58px;
+    left: 0;
+    margin: 0 auto;
 }
 
 section div p{
@@ -66,9 +91,25 @@ section div p{
 }
 .section-3 p, .section-4 p{
     margin:0 auto;
+    color:#FFF;
+}
+
+.section-3 h1:last-child(2){
+    text-align: left;
+}
+
+
+.releases-list{
+    list-style: none;
+    color: #FFF;
+    text-align: left;
+    padding: 0;
+    font-family: anton;
+    font-size: 23px;
+    text-transform: uppercase;
 }
 .production-inquiry{
-    color: #2f7ac5;
+    color: #9ac4ef;
 }
 
 .bonita-green{
@@ -79,14 +120,36 @@ section div p{
     display: flex;
     flex-flow: column;
     align-items: flex-end;
-    height: 470px;
     justify-content: center;
+    
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+    -webkit-transition: opacity 1s,-webkit-transform 1s ease-out;
+    transition: opacity 1s,-webkit-transform 1s ease-out;
+    transition: opacity 1s,transform 1s ease-out;
+    transition: opacity 1s,transform 1s ease-out,-webkit-transform 1s ease-out;
 }
 
-.top-right-flex p {
+.about-text{
+    border-left: 6px solid #bcc8c5;
+    height: 33%;
+    margin-top: -10px;
+    padding-left: 9px;
     width: 31.7%;
+
+}
+.the-list{
+    list-style: none;
+    column-count: 2;
+    color: #bcc8c5;
+    margin: 20px -17px;
 }
 
+i.fa.fa-long-arrow-right {
+    padding-right: 3px;
+}
 
 // Section 4 Modal
 
@@ -94,13 +157,14 @@ section div p{
 
 .back-to-top{
     position: fixed;
-    bottom: 65px;
-    right: 30px;
+    bottom: 20px;
+    right: 20px;
     width:50px;
     height:50px;
     background: #FFF;
     transition: .2s ease-in-out;
     display: none;
+    border-radius: 100%;
 }
 
 .back-to-top:hover{
@@ -318,24 +382,55 @@ ul.hero-nav li a:hover {
     left: 24%;
 }
 
+ .hilite-white{
+        color: #bcc8c5;
+    }
+
 @media(max-width: 480px){
 
-	h1{
+	.section-1 h1{
 		font-size: 65px!important;
 	}
 
 	section {
 	    height: 500px; 
 	    width: auto;
-}
+    }
 
-ul.hero-nav li {
-    font-size: 31px;
-}
+    ul.hero-nav li {
+        font-size: 31px;
+    }
 
 	.message-container p{
     	line-height: initial;
-	}
+    }
+    
+    .section-2 {
+        height: 100vh;
+        background: url(/wp-content/uploads/2017/08/bonitabasics.jpg) center;
+        background-size: cover;
+    }
+
+    .section-2 h1{
+        font-size: 86px;
+        width: 100%;    
+    }
+
+.top-right-flex {
+    display: flex;
+    background: rgba(0,0,0, 0.88);
+    height: 100vh;
+    padding: 40px;
+}
+
+.about-text {
+    border-left: 6px solid #bcc8c5;
+    // height: 20.7%;
+    margin-top: -10px;
+    padding-left: 9px;
+    width: 100%;
+}   
+
 }
 
 @media(min-width: 576px){

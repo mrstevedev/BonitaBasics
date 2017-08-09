@@ -1,12 +1,13 @@
 footer{
 	height: 43px;
-	background: rgba(0,0,0,1);
+	background: rgba(255,255,255,1);
 	padding: 15px;
+	text-align: center;
 }
 footer p{
-	font-family: 'Open Sans';
-    color: #fff;
-    font-size: 9px;
+	font-family: 'helveticaneuecondensedblack';
+    color: #000;
+    // font-size: 9px;
     line-height: 0;
     text-transform: uppercase;
 }

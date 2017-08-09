@@ -58,6 +58,7 @@
     "wiredep": "^4.0.0"
   },
   "dependencies": {
+    "materialize-css": "^0.100.1",
     "spinkit": "^1.2.5"
   }
 }

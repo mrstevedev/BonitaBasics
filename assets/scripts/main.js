@@ -58,9 +58,15 @@
           $('.cart button').addClass('hvr-icon-float-away');
 
           $(window).load(function() {
-            $('#spinner-overlay').fadeOut();
-            $('.spinner-container').hide();            
+            $('#spinner-overlay').addClass('animated fadeOut');           
+            $('.spinner-container').hide();    
+                        $('#spinner-overlay').css('z-index','-1');           
+
+            
+     
+       
           });
+
 
           // sticky back to top
 
@@ -68,11 +74,12 @@
             var scrollPos = $(window).scrollTop();
             if(scrollPos >= 800){
               $('.back-to-top').addClass('fixed animated fadeInRight show');
+                
             } else if(scrollPos < 800){
               $('.back-to-top').removeClass('fadeInRight show');
             }
 
-            if(scrollPos <= 800){
+            if(scrollPos <= 280){
               $('header').addClass('animated fadeInDown')
                 .css('background','rgba(255,255,255, .11)')
                 .css('box-shadow','0 0 1px #999999');
@@ -102,6 +109,9 @@
         // JavaScript to be fired on the home page
       },
       finalize: function() {
+
+       
+
         // JavaScript to be fired on the home page, after the init JS
           var sectionTwoBtn1 = document.querySelector('.sectionTwoBtn1');
           var sectionTwoBtn2 = document.querySelector('.sectionTwoBtn2');

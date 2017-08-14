@@ -32,7 +32,7 @@
 
         // $('.dropdown-menu').addClass('animated fadeIn');
 
-        $('#menu-primary-menu').append('<span class="searchBtn"><a href="#" title="Search"><img class="" src="/wp-content/uploads/2017/06/musica-searcher.svg"></a></span><span class="cartBtn"><a href="/cart" title="View your Cart"><img src="/wp-content/uploads/2017/06/shopping-store-cart-.svg"></a></span>');
+        $('#menu-primary-menu').append('<span class="searchBtn"><a href="#" title="Search"><img class="" src="/wp-content/uploads/2017/08/musica-searcher.svg"></a></span><span class="cartBtn"><a href="/cart" title="View your Cart"><img src="/wp-content/uploads/2017/08/shopping-store-cart-.svg"></a></span>');
         
         //logo center
         var center_el = $('.center-logo');

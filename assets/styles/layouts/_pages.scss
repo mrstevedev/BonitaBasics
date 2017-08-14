@@ -23,7 +23,7 @@
 .section-2{
     height: 100vh;
     background: url(/wp-content/uploads/2017/08/bonitabasics.jpg);
-    background-size: 1073px;
+    background-size: contain;
     display: flex;
     align-items: center;
     
@@ -57,17 +57,20 @@
     font-size:86px;
     text-transform: uppercase;
     text-shadow: 0 1px 1px #000;
-    width: 32.4%;
+    width: 32%;
+    line-height: 80px;
 }
 
 .section-3 h1, .section-4 h1{
-    font-size: 55px;
+    // font-size: 55px;
     color:#bcc8c5; 
-    text-transform: uppercase
+    text-transform: uppercase;
+    line-height: 50px;
+    font-size: 39px;
 }
 
 .section-3 p{
-    width: 62%;
+    width: 67%;
 }
 .section-3 img {
     position: absolute;
@@ -77,9 +80,6 @@
     margin: 0 auto;
 }
 
-section div p{
-    padding: 0px 0px 10px;
-}
 .section-1 p, 
 .section-2 p, 
 .section-3 p, 
@@ -92,21 +92,21 @@ section div p{
 .section-3 p, .section-4 p{
     margin:0 auto;
     color:#FFF;
+    line-height: 33px;
 }
 
 .section-3 h1:last-child(2){
     text-align: left;
 }
 
-
 .releases-list{
     list-style: none;
-    color: #FFF;
-    text-align: left;
+    color: #fff;
     padding: 0;
     font-family: anton;
-    font-size: 23px;
+    font-size: 21px;
     text-transform: uppercase;
+    text-align: right;
 }
 .production-inquiry{
     color: #9ac4ef;
@@ -134,8 +134,7 @@ section div p{
 
 .about-text{
     border-left: 6px solid #bcc8c5;
-    height: 33%;
-    margin-top: -10px;
+    height: 35%;
     padding-left: 9px;
     width: 31.7%;
 
@@ -145,6 +144,11 @@ section div p{
     column-count: 2;
     color: #bcc8c5;
     margin: 20px -17px;
+    font-family: 'helveticaneuecondensedblack';
+}
+
+.release-date{
+    color: #bcc8c5;
 }
 
 i.fa.fa-long-arrow-right {
@@ -302,6 +306,14 @@ ul.hero-nav li a:hover {
 	width: 50%;
 }
 
+.biography-list{
+    padding-left: 0;
+}
+
+.biography-list li i{
+    padding-right: 4px;
+}
+
 .wdi_feed_info{
     display: flex;
     justify-content: center;
@@ -409,6 +421,7 @@ ul.hero-nav li a:hover {
         height: 100vh;
         background: url(/wp-content/uploads/2017/08/bonitabasics.jpg) center;
         background-size: cover;
+        display: inherit;
     }
 
     .section-2 h1{
@@ -425,7 +438,7 @@ ul.hero-nav li a:hover {
 
 .about-text {
     border-left: 6px solid #bcc8c5;
-    // height: 20.7%;
+    height: 22%;
     margin-top: -10px;
     padding-left: 9px;
     width: 100%;

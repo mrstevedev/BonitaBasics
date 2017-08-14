@@ -19,46 +19,22 @@
 		<div class="row">
 			<div class="col-xs-3 col-sm-3">
 				<h3>Affiliations</h3>
-					<ul>
-					Park and Wreck Collective
-				</ul>
-				<ul>
-					sp da iLL kid
-				</ul>
-					<ul>
-					Veks
-					</ul>
-					<ul>
-					Loki
-					</ul>
-					<ul>	
-					Tec								
+					<ul class="affiliations biography-list">
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Park and Wreck Collective</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>sp da iLL kid</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Veks</li>
+						<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Tec</li>
 					</ul>
 			</div>
 			<div class="col-xs-3 col-sm-3">
 			<h3>Records By BonitaBasics</h3>
-				<ul>
-					Upcoming –
-					The PhattCaps Connection
-					Young, Wild & Corrupt
-				</ul>
-				<ul>
-					Released –
-					Rap Buddhaz
-					by TrueMasterz & Da Shogunz
-				</ul>
-					<ul>
-					A Jam In The Rough
-					by DJ Zudo & DJ Truffel The Phunky Phaqir
-					</ul>
-					<ul>
-					Da BlabberMouf LP
-					by BlabberMouf
-					</ul>
-					<ul>									
-						From The Top Of The Stack
-						by BlabberMouf & DJ Propo’88
-					</ul>
+			<ul class="record-releases biography-list">
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Upcoming – The PhattCaps Connection Young, Wild & Corrupt</li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Released – Rap Buddhaz by TrueMasterz & Da Shogunz</li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>A Jam In The Rough by DJ Zudo & DJ Truffel The Phunky Phaqir</li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>Da BlabberMouf LP by BlabberMouf</li>
+				<li><i class="fa fa-angle-double-right" aria-hidden="true"></i>From The Top Of The Stack by BlabberMouf & DJ Propo’88</li>
+			</ul>
 			</div>
 		</div>
 	</div><!-- End Container -->

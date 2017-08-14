@@ -70,7 +70,7 @@
 <section class="section-3">
 	<div class="container">
 		<div class="row">		
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8">	
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">	
 			<h1> <img src="<?php bloginfo('url')?>/wp-content/uploads/2017/08/stacked-vinyl-records.svg"/>Rack 'Em Up Records</h1>
 				<p>Rack 'Em Up records is a label started by Marvalous Tha Duke. More info here about Rack 'Em Up Records. There will be a logo Coming Soon for this new label.</p>
 					<div class="checkBox">
@@ -81,17 +81,40 @@
 						<polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1"/>
 					</svg>
 					</div>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">	
+				<h1><img src="<?php bloginfo('url') ?>/wp-content/uploads/2017/08/vinyl-record.svg"/>Releases</h1>
+				<table>		
+						<tr>
+							<td>Veks - New Release</td>
+							<td class="release-date">OUT NOW</td>
+						</tr>
+						<tr>
+							<td>Inna Attic Crookz - Haheem</td>
+							<td class="release-date">OUT NOW</td>
+						</tr>			
+						<tr>
+							<td>BonitaBasics - Beats From Bonita</td>
+							<td class="release-date">Fall 2017</td>
+						</tr>
+						<tr>
+							<td>sp da iLL kid - Time to Get iLL</td>
+							<td class="release-date">Fall 2017</td>
+						</tr>
+					
+					
+				</table>
+		
+					<div class="checkBox">
+					<a href="http://discogs.com">View Discography</a>
+					<svg width="140" height="65" viewBox="0 0 140 65" xmlns="http://www.w3.org/2000/svg">
+						<rect x="10" class="button" width="128.8" height="63.9"/>
+						<rect x="0" y="22.5" class="box" width="20" height="20"/>
+						<polyline class="checkMark" points="4.5,32.6 8.7,36.8 16.5,29.1"/>
+					</svg>
+					</div>
+			</div>
 		</div>
-		<div class="col-xs-12 col-sm-12 col-md-12 col-lg-4">	
-			<h1><img src="<?php bloginfo('url') ?>/wp-content/uploads/2017/08/vinyl-record.svg"/>Releases</h1>
-			<ul class="releases-list">
-				<li>BonitaBasics - Beats From Bonita </li>
-				<li>sp da iLL kid - Time to get iLL</li>
-				<li>Veks - Some new release</li>
-				<li>Inna Attic Crookz - Release</li>
-			</ul>
-		</div>
-	</div>
 
 	<div class="svg-arrows">
 		<svg class="arrows">
@@ -111,7 +134,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">	
 				<h1>Production Inquiries</h1>
 				<p>Got a project you want me to be a part of? Get in touch.</p>		
-				<p><strong>Email:</strong> <a class="production-inquiry" href="#">production@bonitabasics.com</a></p>	
+				<p><strong>Email</strong> <a class="production-inquiry" href="#">production@bonitabasics.com</a></p>	
 					
 			</div>
 		</div>

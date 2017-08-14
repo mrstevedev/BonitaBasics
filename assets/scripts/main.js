@@ -58,18 +58,16 @@
           $('.cart button').addClass('hvr-icon-float-away');
 
           $(window).load(function() {
-            $('#spinner-overlay').addClass('animated fadeOut');           
-            $('.spinner-container').hide();    
-                        $('#spinner-overlay').css('z-index','-1');           
-
-            
-     
-       
-          });
-
+              $('.spinner-container').hide(); 
+              $('#spinner-overlay').addClass('animated fadeOut');  
+              if($('#spinner-overlay').hasClass('animated fadeOut')){
+                setTimeout(function(){
+                  $('#spinner-overlay').css('display','none');
+                },1100);
+            }
+            });
 
           // sticky back to top
-
           $(window).scroll(function(){
             var scrollPos = $(window).scrollTop();
             if(scrollPos >= 800){
@@ -109,8 +107,6 @@
         // JavaScript to be fired on the home page
       },
       finalize: function() {
-
-       
 
         // JavaScript to be fired on the home page, after the init JS
           var sectionTwoBtn1 = document.querySelector('.sectionTwoBtn1');

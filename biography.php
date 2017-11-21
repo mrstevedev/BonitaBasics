@@ -1,17 +1,11 @@
 <?php /*Template Name: Biography Template */ ?>
-
-<?php while (have_posts()) : the_post(); ?>
-  <?php get_template_part('templates/page', 'header'); ?>
-  <?php get_template_part('templates/content', 'page'); ?>
-<?php endwhile; ?>
-
 <div class="jumbotron" <?php $image = get_field('background_image'); ?> style="background:url(<?php echo $image['url']; ?>)">
 	<div class="container">
 	<div class="row">
 		<div class="biography">
 			<h1>Biography</h1>
 			<p class="biography-copy">
-				<span class="bonita-green">BonitaBasics</span>
+				<!-- <span class="bonita-green">BonitaBasics</span> -->
 					<?php $biography_text = get_field('biography_text'); echo $biography_text;?>							
 			</p>
 		</div><!-- End biography -->

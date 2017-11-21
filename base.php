@@ -6,7 +6,7 @@ use Roots\Sage\Wrapper;
 ?>
 
 <!doctype html>
-<html amp lang="en" <?php language_attributes(); ?>>
+<html lang="en" <?php language_attributes(); ?>>
   <?php get_template_part('templates/head'); ?>
   <body <?php body_class('animated fadeIn'); ?>>
   <script>

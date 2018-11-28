@@ -34,37 +34,10 @@ function cc_mime_types($mimes=array()) {
 }
 add_filter('upload_mimes', 'cc_mime_types', 1, 1);
 
-
-// Customize wp-login
-
-function my_login_logo() { ?>
-    <style type="text/css">
-        body{
-          background: url('http://www.bonitabasics.dev/wp-content/uploads/2017/07/trainflave.jpg') no-repeat!important;
-          background-size: cover!important;
-        }
-        
-        #login h1 a, .login h1 a {
-            background-image: url(<?php echo get_template_directory_uri(); ?>/assets/images/bonitabasics-green.svg);
-            height:6px;
-            width:320px;
-            background-size: 215px 44px;
-            background-repeat: no-repeat;
-            padding-bottom: 30px;           
-        }
-        #login h1 a:focus{
-          box-shadow: none;
-        }
-
-    </style>
-<?php }
-
-
 add_filter( 'login_headerurl', 'custom_loginlogo_url' );
 function custom_loginlogo_url($url) {
     return home_url();
 }
-add_action( 'login_enqueue_scripts', 'my_login_logo' );
 
 // Removes the add to cart button on shop page
 add_action( 'woocommerce_after_shop_loop_item', 'remove_add_to_cart_buttons', 1 );

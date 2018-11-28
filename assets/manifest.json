@@ -2,19 +2,19 @@
   "dependencies": {
     "main.js": {
       "files": [
-        "scripts/main.js"
+        "./scripts/main.js"
       ],
       "main": true
     },
     "main.css": {
       "files": [
-        "styles/main.scss"
+        "./styles/main.scss"
       ],
       "main": true
     },
     "customizer.js": {
       "files": [
-        "scripts/customizer.js"
+        "./scripts/customizer.js"
       ]
     },
     "jquery.js": {
@@ -22,6 +22,6 @@
     }
   },
   "config": {
-    "devUrl": "www.bonitabasics.dev"
+    "devUrl": "http://localhost:8888/www.bonitabasics.dev/"
   }
 }

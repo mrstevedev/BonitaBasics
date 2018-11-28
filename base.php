@@ -35,7 +35,7 @@ use Roots\Sage\Wrapper;
     <?php
       do_action('get_header');
       get_template_part('templates/header');
-?>  
+?>
     <div id="spinner-overlay"></div>
       <div class="spinner-container">
         <div class="spinner">
@@ -43,12 +43,11 @@ use Roots\Sage\Wrapper;
           <div class="double-bounce2"></div>
         </div>
     </div>
-    <div class="wrap <?php 
-      if( is_page( array( 'home', 'biography', 'gallery', 'shop', 'contact' ) ) ){ echo 'container-fluid'; } 
+    <div class="wrap <?php
+      if( is_page( array( 'home', 'biography', 'gallery', 'shop', 'contact' ) ) ){ echo 'container-fluid'; }
         else { echo 'container'; } ?>" role="document">
       <div class="content row">
-        <main class="main">
-        
+        <main class="main">        
           <?php include Wrapper\template_path(); ?>
         </main><!-- /.main -->
         <?php if (Setup\display_sidebar()) : ?>

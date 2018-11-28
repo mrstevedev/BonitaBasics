@@ -30,71 +30,40 @@
          }
         });
 
-        // $('.dropdown-menu').addClass('animated fadeIn');
+        // window.addEventListener('scroll', (e) => {
+        //   const header = document.querySelector('header');
+        //   const distanceY = window.pageYOffset;
+        //   const collapsePoint = 300;
+        //   console.log('scrolling...');
+        //   if(distanceY > collapsePoint) {
+        //     header.classList.remove('sticky-nav--visible')
+        //   } else {
+        //     header.classList.add('sticky-nav--visible')
+        //   }
+        // })
+        
+        
 
-        $('#menu-primary-menu').append('<span class="searchBtn"><a href="#" title="Search"><img class="" src="/wp-content/uploads/2017/08/musica-searcher.svg"></a></span><span class="cartBtn"><a href="/cart" title="View your Cart"><img src="/wp-content/uploads/2017/08/shopping-store-cart-.svg"></a></span>');
-        
-        //logo center
-        var center_el = $('.center-logo');
-        var searchBtn = $('.searchBtn');  
-        var closeBtn = $('<span class="closeBtn"><i class="fa fa-times" aria-hidden="true"></i></span>');        
-        var el = $('<div class="searchOverlay animated fadeIn"><div class="container"><form action="/new-page/" method="POST"><input type="search" autofocus placeholder="Start Typing Here to Search..." /><input type="submit" class="overlaySearchBtn"></form></div></div>');
-        
-        searchBtn.on("click", function(){
-          $('body').append(el, closeBtn).css('overflow','hidden');
-          $(el).show();
-          $(closeBtn).show();
-          $(center_el).hide();
+        $(window).scroll(function() {
+          var distanceY = $(window).scrollTop();
+          var header = $('header');
+          var collapsePoint = 400;
+          if(distanceY > collapsePoint) {
+            header.removeClass('sticky-nav--visible');
+              $('.nav-link').css('color', 'rgba(255,255,255, 1)')
+              $('header.fixed-top')
+                .css('background','rgba(0,0,0, 1)');
+                $('.navbar-light .navbar-nav .active > .nav-link').css('color','#485c5b');
+
+                           
+          }  else {
+            header.addClass('sticky-nav--visible');
+            $('.nav-link').css('color', 'rgba(0,0,0, .5)')
+
+                $('header.fixed-top')
+                  .css('background','rgba(0,0,0, 0)');
+          }
         });
-
-        closeBtn.on("click", function(){
-          $(el).hide();
-          $('body').css('overflow','auto');
-          $(closeBtn).hide();
-          $(center_el).show();
-        });    
-
-          // Add icon to cart button 
-          $('.cart button').addClass('hvr-icon-float-away');
-
-          $(window).load(function() {
-              $('.spinner-container').hide(); 
-              $('#spinner-overlay').addClass('animated fadeOut');  
-              if($('#spinner-overlay').hasClass('animated fadeOut')){
-                setTimeout(function(){
-                  $('#spinner-overlay').css('display','none');
-                },1100);
-            }
-            });
-
-          // sticky back to top
-          $(window).scroll(function(){
-            var scrollPos = $(window).scrollTop();
-            if(scrollPos >= 800){
-              $('.back-to-top').addClass('fixed animated fadeInRight show');
-                
-            } else if(scrollPos < 800){
-              $('.back-to-top').removeClass('fadeInRight show');
-            }
-
-            if(scrollPos <= 280){
-              $('header').addClass('animated fadeInDown')
-                .css('background','rgba(255,255,255, .11)')
-                .css('box-shadow','0 0 1px #999999');
-            }
-              else {
-                $('header').css('background','rgba(255,255,255, .91)');
-
-              }
-            // else if(scrollPos < 150){
-            //   $('header').addClass('animated fadeInDown').css('background','rgba(255,255,255, 0)');
-            // }
-          });
-
-          //  end sticky navigation
-
-          $('.post-type-archive-product .woocommerce-breadcrumb').append('<span class="woocommerce-ad"><a href="http://mpcstuff.com" target="_blank"><img src="/wp-content/uploads/2017/07/mpcad2.png" /></a><img src="/wp-content/uploads/2017/07/mpcad.png" /><img src="/wp-content/uploads/2017/07/gotbeats-ad.png" /><img src="/wp-content/uploads/2017/07/bonitabasics-ad.png" /></span>');
-          $('.woocommerce-ad').css('float','right').css('width','31%').css('height','0px');
       },
       finalize: function() {
         // JavaScript to be fired on all pages, after page specific JS is fired

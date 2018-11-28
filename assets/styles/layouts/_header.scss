@@ -1,8 +1,12 @@
 header{
-    height: 41px;
+    height: 39px;
     display: block;
-    background: #FFF;
     transition: .2s ease-in-out;
+
+    pointer-events: all;
+    -webkit-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .navbar{
@@ -30,28 +34,10 @@ ul#menu-primary-menu li {
     justify-content: center;
 }
 
-.dropdown-menu {
-    border: none;
-    border-top: solid 4px #485c5b;
-    border-radius: 0;
-    top: 86%;
-    box-shadow: 0px 0px 6px #e4e4e4;
-    padding: 0;
-}
-
-.searchBtn,
-.cartBtn{
-    width: 13px;
-    margin: 6px 7px;
-}
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
     color: #485c5b;
-}
-
-.navbar-light .navbar-nav .nav-link {
-    // text-shadow: 0 1px 0 #FFF;
 }
 
 button:focus {
@@ -71,45 +57,6 @@ button:focus {
      @media screen and (min-width:782px) { 
         top:32px; 
     } 
-}
-
-li.social-icon-facebook img{
-    width:13px;
-}
-li.social-icon-instagram img{
-    width:13px;
-}
-li.social-icon-youtube img{
-    width:15px;
-}
-li.social-icon-soundcloud img{
-    width:17px;
-}
-
-a svg:hover #facebook{ 
-  fill: #3B5998;
-}
-
-a svg:hover #instagram{ 
-  fill: #c13584;
-}
-
-a svg:hover #youtube{ 
-  fill: #E62117;
-}
-
-a svg:hover #soundcloud{ 
-  fill: #ff5500;
-}
-
-a svg #facebook,
-a svg #instagram,
-a svg #youtube,
-a svg #soundcloud {
-  transition: 200ms;
-  transition-timing-function: ease-in-out;
-  -webkit-transition: 200ms;
-  -webkit-transition-timing-function: ease-in-out;
 }
 
 @media(max-width: 480px){
@@ -154,23 +101,16 @@ a svg #soundcloud {
     .navbar-nav{
         width: 100%;
     }
-
-     .dropdown-menu{
-        box-shadow: none;
-     }
-
-     .searchBtn,.cartBtn{
-         display: none;
-     }
-
-     .dropdown-menu{
-        background: transparent;
-        text-align: center;
-     }
 }
 
+/* sticky nav header */
+.header.sticky-nav--visible {
+    opacity: 1;
+    top: -100;
+}
 
-// Animate Mobile Menu
-
-//* End Mobile Animation Styles *//
-
+.header.sticky-nav {
+    opacity: 0;
+    position: fixed;
+    top: -200px;
+}

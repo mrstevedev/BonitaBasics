@@ -11,9 +11,9 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 center-logo">
 			<h1>BONITA<span class="bonita-green">BASICS</span></h1>
 			<ul class="hero-nav">
-				<li class="hvr-underline-reveal"><a href="#" class="sectionTwoBtn1">The Basics</a></li>
-				<li class="hvr-underline-reveal"><a href="#" class="sectionThreeBtn1">Recent Projects</a></li>
-				<li class="hvr-underline-reveal"><a href="#section4" class="sectionFourBtn1">Production Inquiries</a></li>
+				<li class="hvr-underline-reveal"><a href="#" class="sectionTwoBtn1mid">The Basics</a></li>
+				<li class="hvr-underline-reveal"><a href="#" class="sectionThreeBtn2mid">Recent Projects</a></li>
+				<li class="hvr-underline-reveal"><a href="#" class="sectionFourBtn2mid">Production Inquiries</a></li>
 			</ul>
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 section-about">					
 				<h2>About</h2>
 				<p>Bonita Basics is from Bonita California. Bonita grew up listening to old school mid 90’s boom bap and is inspired to continue to create the music that he has listened to and is inspired by.</p>
-				<p><strong>Photo by:</strong> sp da iLL kid</p>
+				<p><span class="name-hilite">Photo by: sp da iLL kid</span></p>
 			</div>
 		</div>
 
@@ -57,10 +57,14 @@
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
 
 			</div>
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-6">
-
-
-
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-5 inquiry-container">
+				<h1>Yo! How Can I Listen?<span class="hilite"></span></h1>
+				<p>Not a problem we have links for you to check out some music.</p>
+				<ul class="listen-list">
+					<li><a href="#!">Listen on SoundCloud for the latest music.</a></li>
+					<li><a href="#!">View latest music videos on YouTube</a></li>
+					<li><a href="#!">Connect on Facebook.</a></li>
+				</ul>
 			</div>
 		</div>
 
@@ -73,7 +77,7 @@
 		</svg>
 	</div>
 	</div>
-	
+
 </section>
 
 <section class="section-4">

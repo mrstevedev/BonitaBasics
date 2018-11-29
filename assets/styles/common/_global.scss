@@ -24,7 +24,8 @@ a{
     transition: .2s ease-in-out;
 }
 
-a:hover{
+a:hover, 
+a:focus {
         color: #bcc8c5;
         text-decoration: none;
 }
@@ -58,11 +59,11 @@ td {
 	font-family: Open Sans;
     font-size: 14px;
     font-weight: 100;
-    background: url(/wp-content/uploads/2018/10/trainflave.jpg) 64%!important;
+    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/10/trainflave.jpg) 64%!important;
     background-size: cover;
     height: 100vh;
-
 }
+
 .svg-arrows{
     top:165px!important;
 }
@@ -98,6 +99,11 @@ h3{
 .container-fluid .main{
     padding-left: 0;
     padding-right: 0;
+}
+
+.name-hilite {
+    color: #000;
+    font-weight: bold;
 }
 
 ::selection {

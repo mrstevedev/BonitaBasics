@@ -13,6 +13,10 @@ header{
   padding: .1rem 1rem;
 }
 
+.navbar-brand {
+    padding: 0!important;
+}
+
 .navbar-brand img{
     width: 120px;
 }
@@ -40,10 +44,6 @@ ul#menu-primary-menu li {
     color: #485c5b;
 }
 
-button:focus {
-  outline: none;
-}
-
 @media(max-width:768px){
     ul#menu-primary-menu li{
         font-size:47px;
@@ -62,7 +62,7 @@ button:focus {
 @media(max-width: 480px){
    
     .container-fluid{
-    padding:0   
+        padding:0   
     }
 
     .navbar-brand {

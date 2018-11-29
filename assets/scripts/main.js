@@ -41,14 +41,24 @@
         //     header.classList.add('sticky-nav--visible')
         //   }
         // })
-        
-        
+
+        // Add 'active' class to navigation list item when anchor clicked
+        $('#menu-main-menu li').on('click', function(e) {
+          $('#menu-main-menu li').removeClass('active')
+          $(this).addClass('active')
+        });
+
 
         $(window).scroll(function() {
           var distanceY = $(window).scrollTop();
           var header = $('header');
           var collapsePoint = 400;
           if(distanceY > collapsePoint) {
+            
+            // Swap out header logo with white and green logo        
+            var img_src = $('img.logo').replaceWith('<img class="logo" src="http://localhost:8888/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-white-green.svg" />');
+            
+            
             header.removeClass('sticky-nav--visible');
               $('.nav-link').css('color', 'rgba(255,255,255, 1)')
               $('header.fixed-top')
@@ -57,12 +67,29 @@
 
                            
           }  else {
+
+            // put logo back to the original 
+            var img_src = $('img.logo').replaceWith('<img class="logo"src="http://localhost:8888/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-green.svg" />');
+
+            
+
             header.addClass('sticky-nav--visible');
             $('.nav-link').css('color', 'rgba(0,0,0, .5)')
 
                 $('header.fixed-top')
                   .css('background','rgba(0,0,0, 0)');
           }
+          //sticky back to top
+          $(window).scroll(function(){
+            var scrollPos = $(window).scrollTop();
+            if(scrollPos >= 800){
+              $('.back-to-top').addClass('fixed animated fadeInRight show');
+                
+            } else if(scrollPos < 800){
+              $('.back-to-top').removeClass('fadeInRight show');
+            }
+          });
+           //end sticky navigation
         });
       },
       finalize: function() {
@@ -78,14 +105,14 @@
       finalize: function() {
 
         // JavaScript to be fired on the home page, after the init JS
-          var sectionTwoBtn1 = document.querySelector('.sectionTwoBtn1');
-          var sectionTwoBtn2 = document.querySelector('.sectionTwoBtn2');
+          var sectionTwoBtn1nav = document.querySelector('.sectionTwoBtn1nav');
+          var sectionTwoBtn1mid = document.querySelector('.sectionTwoBtn1mid');
 
-          var sectionThreeBtn1 = document.querySelector('.sectionThreeBtn1');
-          var sectionThreeBtn2 = document.querySelector('.sectionThreeBtn2');
+          var sectionThreeBtn1nav = document.querySelector('.sectionThreeBtn1nav');
+          var sectionThreeBtn2mid = document.querySelector('.sectionThreeBtn2mid');
 
-          var sectionFourBtn1 = document.querySelector('.sectionFourBtn1');
-          var sectionFourBtn2 = document.querySelector('.sectionFourBtn2');
+          var sectionFourBtn1nav = document.querySelector('.sectionFourBtn1nav');
+          var sectionFourBtn2mid = document.querySelector('.sectionFourBtn2mid');
 
           var sectionOne = document.querySelector('.section-1');
           var sectionTwo = document.querySelector('.section-2');
@@ -104,10 +131,11 @@
             event.preventDefault();
            
             smoothScroll(sectionTwo, '1500');
+
           };
            
-          sectionTwoBtn1.addEventListener('click', sectionTwoHandler);
-          sectionTwoBtn2.addEventListener('click', sectionTwoHandler);
+          sectionTwoBtn1nav.addEventListener('click', sectionTwoHandler);
+          sectionTwoBtn1mid.addEventListener('click', sectionTwoHandler);
 
 
           var sectionThreeHandler = function(event){
@@ -115,8 +143,8 @@
 
             smoothScroll(sectionThree, '1500');
           } 
-          sectionThreeBtn1.addEventListener('click', sectionThreeHandler);
-          sectionThreeBtn2.addEventListener('click', sectionThreeHandler);
+          sectionThreeBtn1nav.addEventListener('click', sectionThreeHandler);
+          sectionThreeBtn2mid.addEventListener('click', sectionThreeHandler);
 
 
           var sectionFourHandler = function(event){
@@ -125,8 +153,8 @@
             smoothScroll(sectionFour, '1500');
           }
 
-          sectionFourBtn1.addEventListener('click', sectionFourHandler);
-          sectionFourBtn2.addEventListener('click', sectionFourHandler);
+          sectionFourBtn1nav.addEventListener('click', sectionFourHandler);
+          sectionFourBtn2mid.addEventListener('click', sectionFourHandler);
 
       }
     },

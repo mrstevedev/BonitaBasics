@@ -32,7 +32,7 @@
 <section class="section-2">
 	<div class="container">
 		<div class="row">
-			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-8 section-about">					
+			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 section-about">					
 				<h2>About</h2>
 				<p>Bonita Basics is from Bonita California. Bonita grew up listening to old school mid 90’s boom bap and is inspired to continue to create the music that he has listened to and is inspired by.</p>
 				<p><span class="name-hilite">Photo by: sp da iLL kid</span></p>

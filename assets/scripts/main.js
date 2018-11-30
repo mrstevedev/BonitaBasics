@@ -48,15 +48,14 @@
           $(this).addClass('active')
         });
 
-
         $(window).scroll(function() {
           var distanceY = $(window).scrollTop();
           var header = $('header');
-          var collapsePoint = 400;
+          var collapsePoint = 38;
           if(distanceY > collapsePoint) {
             
             // Swap out header logo with white and green logo        
-            var img_src = $('img.logo').replaceWith('<img class="logo" src="/sp/wordpress/bonitabasics//wp-content/uploads/2018/11/bonitabasics-white-green.svg" />');
+            var img_src = $('img.logo').replaceWith('<img class="logo" src="/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-white-green.svg" />');
                         
             header.removeClass('sticky-nav--visible');
               $('.nav-link').css('color', 'rgba(255,255,255, 1)')
@@ -66,27 +65,26 @@
                            
           }  else {
 
-            
             // put logo back to the original 
             var img_src = $('img.logo').replaceWith('<img class="logo"src="/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-green.svg" />');
             
+
             header.addClass('sticky-nav--visible');
             $('.nav-link').css('color', 'rgba(0,0,0, .5)')
 
                 $('header.fixed-top')
                   .css('background','rgba(0,0,0, 0)');
           }
-          //sticky back to top
+
           $(window).scroll(function(){
             var scrollPos = $(window).scrollTop();
-            if(scrollPos >= 800){
+            if(scrollPos >= 798){
               $('.back-to-top').addClass('fixed animated fadeInRight show');
                 
             } else if(scrollPos < 800){
               $('.back-to-top').removeClass('fadeInRight show');
             }
           });
-           //end sticky navigation
         });
       },
       finalize: function() {

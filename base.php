@@ -36,15 +36,8 @@ use Roots\Sage\Wrapper;
       do_action('get_header');
       get_template_part('templates/header');
 ?>
-    <div id="spinner-overlay"></div>
-      <div class="spinner-container">
-        <div class="spinner">
-          <div class="double-bounce1"></div>
-          <div class="double-bounce2"></div>
-        </div>
-    </div>
     <div class="wrap <?php
-      if( is_page( array( 'home', 'biography', 'gallery', 'shop', 'contact' ) ) ){ echo 'container-fluid'; }
+      if( is_page( array( 'home' ) ) ){ echo 'container-fluid'; }
         else { echo 'container'; } ?>" role="document">
       <div class="content row">
         <main class="main">        

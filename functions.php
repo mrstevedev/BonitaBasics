@@ -34,22 +34,4 @@ function cc_mime_types($mimes=array()) {
 }
 add_filter('upload_mimes', 'cc_mime_types', 1, 1);
 
-add_filter( 'login_headerurl', 'custom_loginlogo_url' );
-function custom_loginlogo_url($url) {
-    return home_url();
-}
-
-// Removes the add to cart button on shop page
-add_action( 'woocommerce_after_shop_loop_item', 'remove_add_to_cart_buttons', 1 );
-
-    function remove_add_to_cart_buttons() {
-      if( is_product_category() || is_shop()) { 
-        remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart' );
-      }
-    }
-
-add_theme_support( 'wc-product-gallery-zoom' );
-add_theme_support( 'wc-product-gallery-lightbox' );
-add_theme_support( 'wc-product-gallery-slider' );
-
 

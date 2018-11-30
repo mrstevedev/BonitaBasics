@@ -66,6 +66,7 @@
                            
           }  else {
 
+            
             // put logo back to the original 
             var img_src = $('img.logo').replaceWith('<img class="logo"src="/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-green.svg" />');
             

@@ -7,7 +7,7 @@
  	margin: 0 auto;
     position: relative;
     text-align: center;
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/11/trainflave.jpg) 0px 0%;
+    background: url(/wp-content/uploads/2018/10/trainflave.jpg) 0px 0%;
     background-size: cover;
 
     opacity: 1;
@@ -23,20 +23,20 @@
 
 .section-2{
     height: 100vh;
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-moods.jpg) center top;
+    background: url(/wp-content/uploads/2018/10/bonitabasics-moods.jpg) center top;
     background-size: cover;
     background-repeat: no-repeat;
 
 }
 
 .section-3{
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/11/section3bg.jpg) center;
+    background: url(/wp-content/uploads/2018/10/section3bg.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
 }
 
 .section-4{
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/11/bonita.jpg);
+    background: url(/wp-content/uploads/2018/11/bonita.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -316,12 +316,12 @@ ul.hero-nav li a:hover {
     	line-height: initial;
     }
 
-    // .section-2 {
-    //     height: 100vh;
-    //     background: url(/www.bonitabasics.dev/wp-content/uploads/2018/11/trainflave.jpg) center;
-    //     background-size: cover;
-    //     display: inherit;
-    // }
+    .section-2 {
+        height: 100vh;
+        background: url(/wp-content/uploads/2018/10/trainflave.jpg) center;
+        background-size: cover;
+        display: inherit;
+    }
 
     .section-2 h1{
         font-size: 86px;

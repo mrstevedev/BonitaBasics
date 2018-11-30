@@ -5,7 +5,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <a class="navbar-brand" href="<?= esc_url(home_url('/')); ?>">
-                <img class="logo" src="<?php bloginfo('url') ?>/wp-content/uploads/2018/11/bonitabasics-green.svg" title="Bonita Basics | San Diego Hip Hop Producer" alt="Bonita Basics San Diego Hip Hop Producer" width="120" height="20" />
+                <img class="logo" src="<?php bloginfo('url') ?>/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-green.svg" title="Bonita Basics | San Diego Hip Hop Producer" alt="Bonita Basics San Diego Hip Hop Producer" width="120" height="20" />
             </a>
 
             <div class="collapse navbar-collapse animated fadeIn" id="navbarTogglerDemo02">

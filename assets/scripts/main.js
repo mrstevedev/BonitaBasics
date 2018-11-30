@@ -52,11 +52,11 @@
         $(window).scroll(function() {
           var distanceY = $(window).scrollTop();
           var header = $('header');
-          var collapsePoint = 38;
+          var collapsePoint = 400;
           if(distanceY > collapsePoint) {
             
             // Swap out header logo with white and green logo        
-            var img_src = $('img.logo').replaceWith('<img class="logo" src="/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-white-green.svg" />');
+            var img_src = $('img.logo').replaceWith('<img class="logo" src="http://localhost:8888/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-white-green.svg" />');
             
             
             header.removeClass('sticky-nav--visible');
@@ -69,7 +69,7 @@
           }  else {
 
             // put logo back to the original 
-            var img_src = $('img.logo').replaceWith('<img class="logo"src="/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-green.svg" />');
+            var img_src = $('img.logo').replaceWith('<img class="logo"src="http://localhost:8888/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-green.svg" />');
 
             
 
@@ -82,7 +82,7 @@
           //sticky back to top
           $(window).scroll(function(){
             var scrollPos = $(window).scrollTop();
-            if(scrollPos >= 798){
+            if(scrollPos >= 800){
               $('.back-to-top').addClass('fixed animated fadeInRight show');
                 
             } else if(scrollPos < 800){

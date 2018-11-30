@@ -58,7 +58,7 @@
 
 			</div>
 			<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-xl-5 inquiry-container">
-				<h1>Yo! How Can I Listen?<span class="hilite"></span></h1>
+				<h1>How Can I Listen?<span class="hilite"></span></h1>
 				<p>Not a problem we have links for you to check out some music.</p>
 				<ul class="listen-list">
 					<li><a href="#!">Listen on SoundCloud for the latest music.</a></li>

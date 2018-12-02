@@ -7,8 +7,9 @@
  	margin: 0 auto;
     position: relative;
     text-align: center;
-    // background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/trainflave.jpg) 0px 0%;
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/10/trainflave.jpg) 0px 0%;
+    
+    background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/trainflave.jpg) 0px 0%;
+    // background: url(/www.bonitabasics.dev/wp-content/uploads/2018/10/trainflave.jpg) 0px 0%;
     background-size: cover;
     opacity: 1;
     visibility: visible;
@@ -18,19 +19,21 @@
     transition: opacity 1s,-webkit-transform 1s ease-out;
     transition: opacity 1s,transform 1s ease-out;
     transition: opacity 1s,transform 1s ease-out,-webkit-transform 1s ease-out;
+
 }
 
 .section-2{
     height: 100vh;
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/10/bonitabasics-moods.jpg) center top;
-    // background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-moods.jpg) center top;
+    // background: url(/www.bonitabasics.dev/wp-content/uploads/2018/10/bonitabasics-moods.jpg) center top;
+    background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonitabasics-moods.jpg) center top;
     background-size: cover;
     background-repeat: no-repeat;
+    
 }
 
 .section-3{
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/10/section3bg.jpg) center;
-    // background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/section3bg.jpg) center;
+    // background: url(/www.bonitabasics.dev/wp-content/uploads/2018/10/section3bg.jpg) center;
+    background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/section3bg.jpg) center;
     background-repeat: no-repeat;
     background-size: cover;
     
@@ -38,8 +41,8 @@
 }
 
 .section-4{
-    background: url(/www.bonitabasics.dev/wp-content/uploads/2018/11/bonita.jpg);
-    // background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonita.jpg);
+    // background: url(/www.bonitabasics.dev/wp-content/uploads/2018/11/bonita.jpg);
+    background: url(/sp/wordpress/bonitabasics/wp-content/uploads/2018/11/bonita.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -155,6 +158,7 @@
     height: 35%;
     padding-left: 9px;
     width: 31.7%;
+
 }
 
 // Section 4 Modal

@@ -61,9 +61,23 @@
 				<h1>How Can I Listen?<span class="hilite"></span></h1>
 				<p>Not a problem we have links for you to check out some music.</p>
 				<ul class="listen-list">
-					<li><a href="#!">Listen on SoundCloud for the latest music.</a></li>
-					<li><a href="#!">View latest music videos on YouTube</a></li>
-					<li><a href="#!">Connect on Facebook.</a></li>
+					<li>
+						<a href="#!">
+							<!-- <img class="img-svg-sc" src="<?php bloginfo('url')?>/wp-content/uploads/2018/11/iconmonstr-soundcloud-1.svg" /> -->
+								Listen on SoundCloud for the latest music.
+							</a>
+							</li>
+					<li>
+						<a href="#!">
+							<!-- <img class="img-svg-yt" src="<?php bloginfo('url')?>/wp-content/uploads/2018/11/iconmonstr-youtube-6.svg" /> -->
+								View latest music videos on YouTube</a>
+					</li>
+					<li>
+						<a href="#!">
+							<!-- <img class="img-svg-fb" src="<?php bloginfo('url')?>/wp-content/uploads/2018/11/iconmonstr-facebook-1.svg" /> -->
+								Connect on Facebook.
+						</a>
+					</li>
 				</ul>
 			</div>
 		</div>

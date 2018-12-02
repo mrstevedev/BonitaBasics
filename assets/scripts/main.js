@@ -30,49 +30,32 @@
          }
         });
 
-        // window.addEventListener('scroll', (e) => {
-        //   const header = document.querySelector('header');
-        //   const distanceY = window.pageYOffset;
-        //   const collapsePoint = 300;
-        //   console.log('scrolling...');
-        //   if(distanceY > collapsePoint) {
-        //     header.classList.remove('sticky-nav--visible')
-        //   } else {
-        //     header.classList.add('sticky-nav--visible')
-        //   }
-        // })
-
         // Add 'active' class to navigation list item when anchor clicked
         $('#menu-main-menu li').on('click', function(e) {
           $('#menu-main-menu li').removeClass('active')
           $(this).addClass('active')
         });
 
-
         $(window).scroll(function() {
           var distanceY = $(window).scrollTop();
           var header = $('header');
-          var collapsePoint = 400;
-          if(distanceY > collapsePoint) {
+          var collapsePoint = 38;
+          if(distanceY > collapsePoint) {            
             
             // Swap out header logo with white and green logo        
-            var img_src = $('img.logo').replaceWith('<img class="logo" src="http://localhost:8888/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-white-green.svg" />');
-            
-            
+            var img_src = $('img.logo').replaceWith('<img class="logo" src="/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-white-green.svg" />');
+                      
             header.removeClass('sticky-nav--visible');
               $('.nav-link').css('color', 'rgba(255,255,255, 1)')
               $('header.fixed-top')
                 .css('background','rgba(0,0,0, 1)');
                 $('.navbar-light .navbar-nav .active > .nav-link').css('color','#485c5b');
 
-                           
           }  else {
 
             // put logo back to the original 
-            var img_src = $('img.logo').replaceWith('<img class="logo"src="http://localhost:8888/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-green.svg" />');
-
+            var img_src = $('img.logo').replaceWith('<img class="logo"src="/www.bonitabasics.dev/wp-content/uploads/2018/11/bonitabasics-green.svg" />');
             
-
             header.addClass('sticky-nav--visible');
             $('.nav-link').css('color', 'rgba(0,0,0, .5)')
 
@@ -105,6 +88,8 @@
       finalize: function() {
 
         // JavaScript to be fired on the home page, after the init JS
+          var sectionOneBtn = document.querySelector('.sectionOneBtn');
+
           var sectionTwoBtn1nav = document.querySelector('.sectionTwoBtn1nav');
           var sectionTwoBtn1mid = document.querySelector('.sectionTwoBtn1mid');
 
@@ -127,13 +112,20 @@
           };
           backToTopBtn.addEventListener('click', backToTopHandler);
 
+          sectionOneBtn.addEventListener('click', sectionOneHandler);
+
+          var sectionOneHandler = function(event) {
+            event.preventDefault();
+            smoothScroll(sectionOne, '1500');
+          }           
+
           var sectionTwoHandler = function(event) {
             event.preventDefault();
            
             smoothScroll(sectionTwo, '1500');
 
           };
-           
+      
           sectionTwoBtn1nav.addEventListener('click', sectionTwoHandler);
           sectionTwoBtn1mid.addEventListener('click', sectionTwoHandler);
 
